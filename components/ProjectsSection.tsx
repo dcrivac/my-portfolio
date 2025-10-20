@@ -1,10 +1,10 @@
 'use client'
 
-import { motion } from 'motion/react'
+import { motion } from 'framer-motion'
 import { Card } from './ui/card'
 import { Button } from './ui/button'
 import { ExternalLink, Github } from 'lucide-react'
-import { ImageWithFallback } from './figma/ImageWithFallback'
+import { ImageWithFallback } from './figma/ImagineWithFallback'
 
 export function ProjectsSection() {
   const projects = [
