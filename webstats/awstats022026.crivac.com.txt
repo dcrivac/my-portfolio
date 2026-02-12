@@ -1,0 +1,313 @@
+AWSTATS DATA FILE 7.7 (build 20161204)
+# If you remove this file, all statistics for date 202602 will be lost/reset.
+# Last config file used to build this data file was /etc/awstats/awstats.crivac.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 1993                
+POS_TIME 2664                
+POS_VISITOR 6975                
+POS_DAY 7980                
+POS_DOMAIN 3274                
+POS_LOGIN 3580                
+POS_ROBOT 3735                
+POS_WORMS 4320                
+POS_EMAILSENDER 4451                
+POS_EMAILRECEIVER 4594                
+POS_SESSION 8257                
+POS_SIDER 8404                
+POS_FILETYPES 4729                
+POS_DOWNLOADS 4842                
+POS_OS 4890                
+POS_BROWSER 5049                
+POS_SCREENSIZE 5385                
+POS_UNKNOWNREFERER 5459                
+POS_UNKNOWNREFERERBROWSER 5546                
+POS_ORIGIN 5628                
+POS_SEREFERRALS 5760                
+POS_PAGEREFS 5923                
+POS_SEARCHWORDS 6071                
+POS_KEYWORDS 6223                
+POS_MISC 2328                
+POS_ERRORS 6282                
+POS_CLUSTER 3436                
+POS_SIDER_404 6394                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20260212042810 747 223149 0
+FirstTime 20260202005023
+LastTime 20260212042810
+LastUpdate 20260212043832 747 722 25 0 0
+TotalVisits 24                  
+TotalUnique 24                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 24                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+FlashSupport 0 0 0
+RealPlayerSupport 0 0 0
+AddToFavourites 0 8 0
+TotalMisc 0 0 0
+QuickTimeSupport 0 0 0
+DirectorSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 2 2 808 12 18 40381
+1 4 4 1616 5 24 60217
+2 2 2 808 2 8 38960
+3 2 2 808 4 9 39707
+4 1 1 404 1 2 85
+5 0 0 0 0 0 0
+6 1 3 138122 9 19 277440
+7 1 1 404 1 7 19663
+8 0 0 0 2 6 1147
+9 0 0 0 15 17 1656
+10 2 2 808 8 15 159388
+11 0 0 0 8 19 3164
+12 1 1 404 16 22 140682
+13 0 0 0 9 24 140917
+14 2 3 118017 9 10 1773
+15 1 2 117613 6 13 21027
+16 1 1 404 4 8 1532
+17 0 0 0 2 5 991
+18 2 2 808 5 7 20349
+19 2 2 808 1 4 19517
+20 0 0 0 2 4 19897
+21 0 0 0 4 11 1552
+22 0 0 0 1 1 404
+23 0 0 0 1 3 526
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 8
+us 13 17 377388
+se 3 3 1212
+ca 3 3 1212
+bg 1 1 404
+nl 1 1 404
+gb 1 1 404
+de 1 1 404
+sg 1 1 404
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 13
+Googlebot/ 55 427462 20260211152652 16
+bot[\s_+:,\.\;\/\\-] 25 3240 20260212014022 20
+robot 13 1479 20260211232041 11
+bingbot/ 6 138648 20260210121924 2
+AhrefsBot/ 6 138648 20260211102752 2
+facebookexternalhit/ 3 1212 20260210135348 0
+crawl 3 1212 20260207143313 0
+checker 2 808 20260209113944 0
+unknown 2 122 20260207001919 2
+Applebot/ 1 61 20260207112708 1
+java 1 0 20260207143312 0
+link 1 404 20260203124532 0
+^mozilla\/5\.0$ 1 404 20260204083758 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 3
+js 3 351627 0 0
+css 1 20509 0 0
+html 24 9696 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 8
+ios_iphone 3 2
+win10 10 9
+win8.1 1 1
+macosx 1 1
+linuxandroid 1 1
+winnt 3 1
+unix 1 1
+linux 8 8
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 15
+firefox115 1 1
+chrome99.0.4844.51 1 1
+chrome101.0.4951.61 1 1
+safari26.3 3 2
+chrome105.0.0.0 1 1
+mozilla 1 1
+chrome121.0.0.0 1 1
+chrome124.0.0.0 2 2
+chrome142.0.0.0 5 5
+chrome91.0.4472.114 2 2
+firefox126.0 1 1
+chrome134.0.6998.166 3 1
+firefox135.0 2 1
+firefox65.0 1 1
+firefox142.0 3 3
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 0
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 0
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 20 20
+From1 0 0
+From2 2 2
+From3 0 0
+From4 2 6
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 1
+www_google_com 2 2
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 3
+404 55 295085
+400 6 558
+301 60 1440
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 8
+/llms.txt 1 -
+/.well-known/acme-challenge/flyio-test-9772795-crivac_com 19 -
+/vite.svg 17 https://crivac.com/
+/apple-touch-icon.png 7 -
+/apple-touch-icon-precomposed.png 7 -
+/apple-touch-icon-120x120-precomposed.png 1 -
+/apple-touch-icon-120x120.png 1 -
+/sitemaps.xml 2 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 24
+54.89.236.4 1 1 404 20260207122440
+138.197.24.50 1 1 404 20260210022324
+172.56.242.218 1 1 404 20260206011941
+93.158.91.24 1 1 404 20260204192943
+172.56.177.187 1 2 117613 20260210152405
+35.215.114.178 1 1 404 20260209102058
+109.199.118.129 1 1 404 20260212042810 20260212042810 /
+83.140.247.225 1 1 404 20260203192249
+165.22.235.220 1 1 404 20260204022319
+159.65.24.22 1 1 404 20260204180034
+184.94.240.88 1 1 404 20260211104829
+161.115.234.166 1 2 117613 20260205145444
+143.244.186.230 1 1 404 20260206035741
+143.110.159.168 1 1 404 20260202005023
+68.183.4.101 1 1 404 20260208033926
+167.99.191.124 1 1 404 20260212010515
+193.183.171.187 1 1 404 20260206165845
+161.115.234.114 1 1 404 20260205145322
+139.59.239.230 1 1 404 20260206184413
+23.81.33.206 1 3 138122 20260208065118
+205.209.106.132 1 1 404 20260205011132
+64.23.128.11 1 1 404 20260206073112
+137.184.167.240 1 1 404 20260206002042
+217.160.202.182 1 1 404 20260202012900
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 11
+20260202 2 2 808 2
+20260203 1 1 404 1
+20260204 3 3 1212 3
+20260205 3 4 118421 3
+20260206 6 6 2424 6
+20260207 1 1 404 1
+20260208 2 4 138526 2
+20260209 1 1 404 1
+20260210 2 3 118017 2
+20260211 1 1 404 1
+20260212 2 2 808 2
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 1
+0s-30s 23
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 1
+/ 24 9696 24 23
+END_SIDER

@@ -1,0 +1,53 @@
+{
+  "version": 1.1,
+  "properties": [
+    {
+      "name": "--background",
+      "description": "Background color from theme"
+    },
+    {
+      "name": "--foreground",
+      "description": "Foreground text color from theme"
+    },
+    {
+      "name": "--card",
+      "description": "Card background color"
+    },
+    {
+      "name": "--card-foreground",
+      "description": "Card text color"
+    },
+    {
+      "name": "--primary",
+      "description": "Primary brand color"
+    },
+    {
+      "name": "--primary-foreground",
+      "description": "Text color on primary background"
+    },
+    {
+      "name": "--secondary",
+      "description": "Secondary color"
+    },
+    {
+      "name": "--muted",
+      "description": "Muted color"
+    },
+    {
+      "name": "--accent",
+      "description": "Accent color"
+    },
+    {
+      "name": "--destructive",
+      "description": "Destructive/error color"
+    },
+    {
+      "name": "--border",
+      "description": "Border color"
+    },
+    {
+      "name": "--radius",
+      "description": "Border radius value"
+    }
+  ]
+}
