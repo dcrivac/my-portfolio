@@ -93,6 +93,7 @@ export function ProjectsSection() {
                   <div className="absolute top-4 right-4 flex space-x-2">
                     <motion.a
                       href={project.github}
+                      aria-label={`View ${project.title} on GitHub`}
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.95 }}
                       className="w-10 h-10 bg-black/70 rounded-full flex items-center justify-center text-white hover:bg-emerald-500 transition-all duration-300"
@@ -101,6 +102,7 @@ export function ProjectsSection() {
                     </motion.a>
                     <motion.a
                       href={project.live}
+                      aria-label={`View ${project.title} live site`}
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.95 }}
                       className="w-10 h-10 bg-black/70 rounded-full flex items-center justify-center text-white hover:bg-emerald-500 transition-all duration-300"
@@ -166,12 +168,14 @@ export function ProjectsSection() {
                   <div className="absolute top-3 right-3 flex space-x-2">
                     <a
                       href={project.github}
+                      aria-label={`View ${project.title} on GitHub`}
                       className="w-8 h-8 bg-black/70 rounded-full flex items-center justify-center text-white hover:bg-emerald-500 transition-all duration-300"
                     >
                       <Github className="w-4 h-4" />
                     </a>
                     <a
                       href={project.live}
+                      aria-label={`View ${project.title} live site`}
                       className="w-8 h-8 bg-black/70 rounded-full flex items-center justify-center text-white hover:bg-emerald-500 transition-all duration-300"
                     >
                       <ExternalLink className="w-4 h-4" />

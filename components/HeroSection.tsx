@@ -1,43 +1,46 @@
-'use client'
+"use client";
 
-import { useState, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { Button } from './ui/button'
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react'
+import { AnimatePresence, motion } from "framer-motion";
+import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { useEffect, useState } from "react";
+import { Button } from "./ui/button";
 
 export function HeroSection() {
   const titles = [
-    'Modern Web Developer',
-    'Software Engineer',
-    'iOS Developer',
-    'Full-Stack Engineer',
-    'Webmaster',
-    'Android Developer',
-    'Product Manager',
-    'Software Architect',
-    'Hacker',
-    'DevOps Engineer',
-    'Programmer',
-    'Data Scientist'
-  ]
-  const [currentTitleIndex, setCurrentTitleIndex] = useState(0)
+    "Modern Web Developer",
+    "Software Engineer",
+    "iOS Developer",
+    "Full-Stack Engineer",
+    "Webmaster",
+    "Android Developer",
+    "Product Manager",
+    "Software Architect",
+    "Hacker",
+    "DevOps Engineer",
+    "Programmer",
+    "Data Scientist",
+  ];
+  const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentTitleIndex((prev) => (prev + 1) % titles.length)
-    }, 2000) // Change every 2 seconds
+      setCurrentTitleIndex((prev) => (prev + 1) % titles.length);
+    }, 2000); // Change every 2 seconds
 
-    return () => clearInterval(interval)
-  }, [])
+    return () => clearInterval(interval);
+  }, []);
   const scrollToProjects = () => {
-    const element = document.getElementById('projects')
+    const element = document.getElementById("projects");
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
+      element.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   return (
-    <section id="home" className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black flex items-center justify-center relative overflow-hidden">
+    <section
+      id="home"
+      className="min-h-screen bg-linear-to-br from-black via-gray-900 to-black flex items-center justify-center relative overflow-hidden"
+    >
       {/* Animated background elements */}
       <div className="absolute inset-0">
         {[...Array(50)].map((_, i) => (
@@ -45,18 +48,18 @@ export function HeroSection() {
             key={i}
             className="absolute w-1 h-1 bg-white/20 rounded-full"
             initial={{ opacity: 0 }}
-            animate={{ 
+            animate={{
               opacity: [0, 1, 0],
-              scale: [0, 1, 0]
+              scale: [0, 1, 0],
             }}
             transition={{
               duration: Math.random() * 3 + 2,
               repeat: Infinity,
-              delay: Math.random() * 2
+              delay: Math.random() * 2,
             }}
             style={{
               left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`
+              top: `${Math.random() * 100}%`,
             }}
           />
         ))}
@@ -77,7 +80,7 @@ export function HeroSection() {
           >
             Hello, I'm
           </motion.p>
-          
+
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -86,7 +89,7 @@ export function HeroSection() {
           >
             David Kenji Crivac
           </motion.h1>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -101,24 +104,25 @@ export function HeroSection() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.5 }}
-                  className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-blue-400 to-purple-400 inline-block"
+                  className="text-transparent bg-clip-text bg-linear-to-r from-emerald-400 via-blue-400 to-purple-400 inline-block"
                 >
                   {titles[currentTitleIndex]}
                 </motion.span>
               </AnimatePresence>
             </div>
           </motion.div>
-          
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8 }}
             className="text-gray-400 text-lg max-w-2xl mx-auto pt-2 pb-8"
           >
-            I craft exceptional digital experiences using cutting-edge technologies like React, Node.js, and TypeScript. 
-            Passionate about clean code, user experience, and bringing ideas to life.
+            I craft exceptional digital experiences using cutting-edge
+            technologies like React, Node.js, and TypeScript. Passionate about
+            clean code, user experience, and bringing ideas to life.
           </motion.p>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -131,12 +135,12 @@ export function HeroSection() {
             >
               View My Work
             </Button>
-            
+
             <div className="flex items-center space-x-4">
               {[
-                { icon: Github, href: '#' },
-                { icon: Linkedin, href: '#' },
-                { icon: Mail, href: '#' }
+                { icon: Github, href: "#" },
+                { icon: Linkedin, href: "#" },
+                { icon: Mail, href: "#" },
               ].map(({ icon: Icon, href }, index) => (
                 <motion.a
                   key={index}
@@ -152,7 +156,7 @@ export function HeroSection() {
             </div>
           </motion.div>
         </motion.div>
-        
+
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -169,5 +173,5 @@ export function HeroSection() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
