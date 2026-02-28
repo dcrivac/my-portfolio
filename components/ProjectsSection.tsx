@@ -1,35 +1,56 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { Card } from './ui/card'
-import { Button } from './ui/button'
-import { ExternalLink, Github } from 'lucide-react'
-import { ImageWithFallback } from './figma/ImagineWithFallback'
+import { motion } from "framer-motion";
+import { ExternalLink, Github } from "lucide-react";
+import { ImageWithFallback } from "./figma/ImagineWithFallback";
+import { Button } from "./ui/button";
+import { Card } from "./ui/card";
 
 export function ProjectsSection() {
   const projects = [
     {
-      title: 'The First Truly Intelligent Clipboard Manager,
-      description: 'Clipso is an intelligent clipboard history manager that uses AI to help you find, organize, and reuse your clipboard content. It goes beyond simple history tracking with semantic search, automatic context detection, project tagging, OCR for images, and encryption for sensitive data. Built for productivity-focused users who copy/paste frequently.',
-      image: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=600&h=400&fit=crop',
-      technologies: ['SwiftUI', 'AppKit', 'Swift', 'Core Data', 'Natural Language', 'Vision', 'Core ML', 'CryptoKit', 'Keychain', 'GitHub Actions', 'Paddle'],
-      github: 'https://github.com/dcrivac/Clipso',
-      live: 'https://clipso.app/',
-      featured: true
+      title: "The First Truly Intelligent Clipboard Manager",
+      description:
+        "Clipso is an intelligent clipboard history manager that uses AI to help you find, organize, and reuse your clipboard content. It goes beyond simple history tracking with semantic search, automatic context detection, project tagging, OCR for images, and encryption for sensitive data. Built for productivity-focused users who copy/paste frequently.",
+      image:
+        "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=600&h=400&fit=crop",
+      technologies: [
+        "SwiftUI",
+        "AppKit",
+        "Swift",
+        "Core Data",
+        "Natural Language",
+        "Vision",
+        "Core ML",
+        "CryptoKit",
+        "Keychain",
+        "GitHub Actions",
+        "Paddle",
+      ],
+      github: "https://github.com/dcrivac/Clipso",
+      live: "https://clipso.app/",
+      featured: true,
     },
     {
-      title: 'Portfolio Website',
-      description: 'A responsive portfolio website with smooth animations, dark theme, and optimized performance built with modern web technologies.',
-      image: 'https://www.crivac.com',
-      technologies: ['Next.js', 'React', 'Framer Motion', 'Tailwind', 'TypeScript'],
-      github: '#',
-      live: '#',
-      featured: false
-    }
-  ]
+      title: "Portfolio Website",
+      description:
+        "A responsive portfolio website with smooth animations, dark theme, and optimized performance built with modern web technologies.",
+      image: "https://www.crivac.com",
+      technologies: [
+        "Next.js",
+        "React",
+        "Framer Motion",
+        "Tailwind",
+        "TypeScript",
+      ],
+      github: "#",
+      live: "#",
+      featured: false,
+    },
+  ];
 
-  const featuredProjects = projects.filter(p => p.featured)
-  const otherProjects = projects.filter(p => !p.featured)
+  const featuredProjects = projects.filter((p) => p.featured);
+  const otherProjects = projects.filter((p) => !p.featured);
 
   return (
     <section id="projects" className="py-20 bg-gray-900">
@@ -41,10 +62,13 @@ export function ProjectsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl text-white mb-6">Featured Projects</h2>
+          <h2 className="text-4xl md:text-5xl text-white mb-6">
+            Featured Projects
+          </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-emerald-400 to-blue-400 mx-auto"></div>
           <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
-            Here are some of my recent projects that showcase my skills and passion for web development
+            Here are some of my recent projects that showcase my skills and
+            passion for web development
           </p>
         </motion.div>
 
@@ -85,7 +109,7 @@ export function ProjectsSection() {
                     </motion.a>
                   </div>
                 </div>
-                
+
                 <div className="p-6">
                   <h3 className="text-xl text-white mb-3 group-hover:text-emerald-400 transition-colors duration-300">
                     {project.title}
@@ -117,7 +141,9 @@ export function ProjectsSection() {
           viewport={{ once: true }}
           className="mb-8"
         >
-          <h3 className="text-2xl text-white text-center mb-8">Other Projects</h3>
+          <h3 className="text-2xl text-white text-center mb-8">
+            Other Projects
+          </h3>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -152,7 +178,7 @@ export function ProjectsSection() {
                     </a>
                   </div>
                 </div>
-                
+
                 <div className="p-4">
                   <h4 className="text-lg text-white mb-2 group-hover:text-emerald-400 transition-colors duration-300">
                     {project.title}
@@ -183,8 +209,8 @@ export function ProjectsSection() {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <Button 
-            variant="outline" 
+          <Button
+            variant="outline"
             className="border-emerald-500/50 text-emerald-400 hover:bg-emerald-500/10 px-8 py-3"
           >
             View All Projects
@@ -192,5 +218,5 @@ export function ProjectsSection() {
         </motion.div>
       </div>
     </section>
-  )
-} 
+  );
+}
