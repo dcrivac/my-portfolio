@@ -65,7 +65,7 @@ export function ProjectsSection() {
           <h2 className="text-4xl md:text-5xl text-white mb-6">
             Featured Projects
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-emerald-400 to-blue-400 mx-auto"></div>
+          <div className="w-24 h-1 bg-linear-to-r from-emerald-400 to-blue-400 mx-auto"></div>
           <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
             Here are some of my recent projects that showcase my skills and
             passion for web development
